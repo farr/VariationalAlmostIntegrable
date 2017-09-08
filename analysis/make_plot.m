@@ -1,0 +1,8 @@
+dkd=importdata('dkd.dat')
+s4b=importdata('s4b.dat')
+s6b=importdata('s6b.dat')
+var=importdata('var.dat')
+loglog(dkd(:,1),dkd(:,2),'+k',s4b(:,1),s4b(:,2),'ok',s6b(:,1),s6b(:,2),'*k',var(:,1),var(:,2),'.k')
+xlabel('Timestep')
+ylabel('Relative Phase Space Error')
+legend('KDK', 'S4B', 'S6B', '\epsilon^2','Location','NorthWest')
